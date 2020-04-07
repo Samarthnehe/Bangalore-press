@@ -1,0 +1,456 @@
+.nav-menu, .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+  }
+  input[type=text]:focus{
+    width: 300px;
+  }
+  
+  .nav-menu li {
+    position: relative;
+    white-space: nowrap;
+    
+  }
+  
+  .nav-menu > li {
+    float: left;
+  }
+  
+  .nav-menu li:hover > ul,
+  .nav-menu li.sfHover > ul {
+    display: block;
+  }
+  
+  .nav-menu ul ul {
+    top: 0;
+    left: 100%;
+  }
+  
+  .nav-menu ul li {
+    min-width: 180px;
+  }
+  #nav-menu-container {
+    float: left;
+   
+  
+  }
+  
+  table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  th{
+      padding: 15px;
+  }
+  th{
+      text-align: left;
+  }
+  td{
+      padding: 20px;
+  }
+  td a:hover{
+    color: red;
+  }
+  
+  .nav-menu a {
+      background-color: black;
+    padding: 6px 8px 6px 8px;
+    border: rgb(252, 3, 3) 0.2px solid;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+  }
+  .nav-menu > li {
+    margin-left: 1px;
+    padding-top: 5px;
+    
+  }
+  
+  .nav-menu ul {
+    margin: 4px 0 0 0;
+    padding: 2px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background:rgb(0, 0, 0);
+    
+  }
+  #stage{
+      padding-top: 10px;
+  }
+  
+  .nav-menu ul li {
+    transition: 0.3s;
+    
+  }
+  
+  .nav-menu ul li a {
+    padding: 2px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+    
+  }
+  
+  .nav-menu li a:hover {
+    color: #fbff00;
+  }
+  
+  .nav-menu ul ul {
+    margin: 0;
+  }
+  #header.header-fixed {
+    background: linear-gradient(45deg, #f03303, #ffa600);
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+  }
+  #contacts
+  {
+      display: flex;
+  }
+  .me
+  {
+      padding-top:20px;
+      flex:50%;
+      width: 480px;
+      position: relative;
+  }
+  .meme
+  {
+      width: 300px;
+      height:300px;
+      text-align: center;
+      margin: 0 auto;
+  }
+  .meme p{
+      color: rgb(0, 0, 0);
+      font-size: large;
+  }
+  .form{
+      display: flex;
+  }
+  .columns{
+      flex: 50%;
+  }
+  .rows1
+  {
+      display: flex;
+  }
+  .cols{
+      flex: 50%;
+  }
+  #contact {
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+}
+
+#contact .contact-about h3 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ff7301;
+}
+
+#contact .contact-about p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #888;
+}
+
+#contact .social-links {
+  padding-bottom: 20px;
+}
+
+#contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgb(0, 0, 0);
+  color: #f87000;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #ff8800;
+}
+
+#contact .social-links a:hover {
+  background: #fa8805;
+  color: rgb(0, 0, 0);
+}
+
+#contact .info {
+  color: #888;
+}
+
+#contact .info i {
+  font-size: 32px;
+  color: #ff8800;
+  float: left;
+  line-height: 1;
+}
+
+#contact .info p {
+  padding: 0 0 10px 42px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+#contact .form #sendmessage {
+  color: #ff6600;
+  border: 1px solid #ff6105;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  color:rgb(0, 0, 0)
+}
+
+#contact .form button[type="submit"] {
+  background: linear-gradient(45deg, #f83a00, #e28b09);
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: rgb(3, 0, 0);
+}
+
+#contact .form button[type="submit"]:hover {
+  cursor: pointer;
+}
+
+  .box
+  {
+      width:700px;
+      border-top: rgb(0, 0, 0) solid 1px ;
+      border-bottom: rgb(3, 2, 0) solid 1px ;
+      
+  }
+  .box p{
+      width: 400px;
+      height: 100px;
+  }
+  .submiting
+  {
+      height: 40px;
+      width:400px;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-left: 100px;
+      
+  }
+  .buttons
+  {
+    background: linear-gradient(45deg,rgb(255, 62, 36), rgb(248, 3, 3));
+
+    color: rgb(0, 0, 0);
+    
+    border-style: outset;
+    
+    border-color: rgb(0, 0, 0);
+    
+    height: 50px;
+    
+    width: 100px;
+    
+    font: bold 15px arial, sans-serif;
+    
+    text-shadow:none;
+  }
+  #stage {
+   
+    width: 382px;
+    height: 292px;
+    margin: 0 auto;
+    
+  }
+
+  #stage a {
+    position: absolute;
+    margin-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 37px;
+        margin-left:-380px;
+  }
+  #stage a img {
+      
+    margin-top: 7px;
+    margin-right: 0px;
+    margin-bottom: 37px;
+    margin-left: -300px;
+    padding: 5px;
+    border: 1px solid rgb(250, 1, 1);
+    background: rgb(0, 0, 0) ;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay:2s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+.content
+{
+    text-align: center;
+    width:1000px;
+    height: 200px;
+}
+.repeat{
+    padding-left: 180px;
+    
+
+}
+
+.repeat1{
+    background-color: black;
+    color: cornsilk;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 280px;
+}
+.repeat1 ul li a{
+    color: rgb(0, 17, 255);
+}
+.repeat1 ul li a:hover{
+    color: rgb(243, 247, 8);
+}
+#footer {
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: rgb(255, 253, 253);
+    font-size: 14px;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+  }
+  
+  #footer .footer-links a {
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+  }
+  
+  #footer .footer-links a:first-child {
+    padding-left: 0;
+  }
+  
+  #footer .footer-links a:hover {
+    color: red;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+   
+  }
+  .sticky1 {
+    padding-left: 940px;
+    
+   
+  }
+ textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    color:rgb(0, 0, 0)
+  }
+  .form{
+      padding-bottom: 40px;
+  }
+  .form-group{
+      padding: 5px;
+  }
+  .hmm{
+      padding-bottom: 100px;
+      padding-left: 20px;
+      height: 100px;
+  }
+  .hmm1 
+  {
+      width:300px;
+      height: 180px;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      background-color: black;color: blanchedalmond;border: yellow 1px solid;
+  }
+  .hmm1 ul li a{
+      color: red;
+  }
+  .hmm1 ul li a:hover{
+      color: rgb(246, 250, 0);
+  }
+  .row2{
+      display: flex;
+
+  }
+  .col2{
+      flex: 30% 70%;
+      
+  }
